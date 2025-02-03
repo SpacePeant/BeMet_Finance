@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/dash.css" />
+    <!-- Link buat icon matt -->
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li class="list active">
+          <a href="#">
+            <span class="icon">
+              <i data-feather="home"></i>
+            </span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#">
+            <span class="icon">
+              <i data-feather="info"></i>
+            </span>
+            <span class="text">About</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#">
+            <span class="icon">
+              <i data-feather="phone"></i>
+            </span>
+            <span class="text">Contact Us</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#">
+            <span class="icon">
+              <i data-feather="settings"></i>
+            </span>
+            <span class="text">Setting</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#">
+            <span class="icon">
+              <i data-feather="user"></i>
+            </span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+
+        <div class="indicator"></div>
+      </ul>
+    </div>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script>
+      const list = document.querySelectorAll(".list");
+
+      function active() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+
+      list.forEach((item) => item.addEventListener("click", active));
+    </script>
+  </body>
+</html>
