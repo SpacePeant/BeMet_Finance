@@ -1,0 +1,57 @@
+body {
+  min-height: 90vh;
+  background: black;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 100%;
+  transition: 0.3s;
+  background: #ffffff12;
+  padding: 20px 20px 20px 0;
+}
+
+.main:hover {
+  width: 260px;
+}
+
+.menu-content .menu {
+  list-style: none;
+  border-radius: 0px 50px 50px 0;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.menu-content .menu:hover {
+  background: green;
+}
+
+.menu span {
+  margin-right: 10px;
+}
+
+.menu-content .menu span:nth-child(2) {
+  display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(213, 213, 213);
+  display: flex;
+  align-items: center;
+  font-family: "calibri";
+}
+
+.menu {
+  padding: 10px;
+  border-radius: 50%;
+  background: rebeccapurple;
+}
